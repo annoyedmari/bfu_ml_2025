@@ -17,8 +17,8 @@ colors = {0: 'purple', 1: 'blue', 2: 'cyan'}
 def plotting_irises(name) -> None:
     for i, sort in enumerate(iris.target_names):
         plt.scatter(
-            dataframe[dataframe['target'] == i][f'{name} length in cm'],
-            dataframe[dataframe['target'] == i][f'{name} width in cm'],
+            dataframe[dataframe['target'] == i][f'{name} length (cm)'],
+            dataframe[dataframe['target'] == i][f'{name} width (cm)'],
             c = colors[i],
             label = sort)
     plt.xlabel(f'{name} length in cm')
