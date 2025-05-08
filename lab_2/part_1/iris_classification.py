@@ -2,7 +2,7 @@ import pandas
 import matplotlib.pyplot as plt
 import seaborn
 from sklearn.datasets import load_iris, make_classification
-from sklearn.datasets import train_test_split
+from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 
@@ -75,7 +75,7 @@ plt.scatter(
     c = 'purple', cmap = 'viridis',
     label = 'New dataset')
 plt.xlabel('First feature')
-plt.ylabel('Secong feature')
+plt.ylabel('Second feature')
 plt.show()
 
 train_predict(X, Y)
